@@ -33,7 +33,7 @@ const ProfileCard = () => {
             <div className=" text-xs md:text-base">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. In
               ratione velit est qui repudiandae voluptate necessitatibus
-              incidunt ipsum{" "}
+              incidunt ipsum
             </div>
           </div>
         </div>

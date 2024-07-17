@@ -1,14 +1,24 @@
 "use client";
 
+import { useState } from "react";
 import { Fade } from "react-awesome-reveal";
 import { RiArrowRightSFill } from "react-icons/ri";
 
 export const Hero = () => {
+  const [imageSrc, setImageSrc] = useState("https://imgur.com/7IDJR28.jpeg");
+  const hoverSrc = "https://i.imgur.com/rfyq0lt.jpeg";
+
   return (
     <Fade>
       <div className=" h-auto lg:mx-5 pt-56 py-28 flex flex-col md:flex-row justify-center md:items-center">
         <div className=" h-[400px] md:w-1/3">
-          <div className=" bg-gradient-to-r from-[#070a1f] via-[#191c28] outline outline-1 outline-[#131728] h-[360px] rounded-xl m-5"></div>
+          <img
+            alt="img"
+            src={imageSrc}
+            className=" outline outline-1 outline-[#131728] h-[360px] rounded-xl m-5"
+            onMouseEnter={() => setImageSrc(hoverSrc)}
+            onMouseLeave={() => setImageSrc("https://i.imgur.com/7IDJR28.jpeg")}
+          />
         </div>
         <div className=" md:w-2/3 pl-10 h-[400px] py-10 flex flex-col">
           <div>A FULL-STACK WEB DEVELOPER</div>

@@ -11,13 +11,14 @@ export default function Home() {
   return (
     // <>
     <div className=" text-white bg-[#000319] h-auto px-0 sm:px-5 lg:px-20">
+      <div className="cursor"></div>
       <Navbar />
       <Hero />
       <About />
       <Profile />
       <Projects />
       <WorkExp />
-      <SocailLinks /> 
+      <SocailLinks />
       <Footer />
     </div>
     // </>
