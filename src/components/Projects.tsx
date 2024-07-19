@@ -25,7 +25,7 @@ export const Projects = () => {
             ProjectTitle="Web App for College Placements"
             ProjectDesc="Web app for final year students to stay up-to-date with the placement companies and to apply on them"
             StackLogos="O O O O"
-            LiveSite=""
+            LiveSite="https://placement-pal.vercel.app/"
           />
           <ProjectCard
             ProjectSS="https://i.imgur.com/1CsQnSO.png"
@@ -73,7 +73,7 @@ const ProjectCard = ({
           <div className=" mt-3 flex justify-between">
             <div>{StackLogos}</div>
             <div className=" flex justify-center items-center border-b-2 border-[#070a1f] hover:border-b-2 hover:border-[#282b38]">
-              <a href={LiveSite}>Check Live Site</a>
+              <a target="_blank" href={LiveSite}>Check Live Site</a>
               <RiArrowRightSFill />
             </div>
           </div>
