@@ -10,8 +10,8 @@ export const Hero = () => {
 
   return (
     <Fade>
-      <div className=" h-auto lg:mx-5 md:pt-56 py-28 flex flex-col md:flex-row justify-center md:items-center">
-        <div className=" sm:h-[400px] md:w-1/3">
+      <div className=" h-auto lg:mx-5 md:pt-56 pt-28 lg:pb-28 flex flex-col md:flex-row justify-center md:items-center">
+        <div className=" ml-5 md:ml-0 min-[300px] sm:h-[400px] md:min-w-[350px] md:w-1/3">
           <img
             alt="img"
             src={imageSrc}
@@ -22,7 +22,7 @@ export const Hero = () => {
         </div>
         <div className=" md:w-2/3 pl-10 h-[400px] py-10 flex flex-col">
           <div className=" font-mono">A FULL-STACK WEB DEVELOPER</div>
-          <div className=" text-4xl md:text-7xl font-bold pt-3 pb-5">
+          <div className=" text-4xl md:text-5xl lg:text-7xl font-bold pt-3 pb-5">
             Transforming Concepts into Seamless
             <span className=" text-purple-400"> User Experiences</span>
           </div>

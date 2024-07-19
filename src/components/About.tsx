@@ -102,7 +102,7 @@ export const About = () => {
                   src={Shine}
                   className=" absolute inset-0 h-full mix-blend-screen rounded-xl"
                 />
-                <div className=" absolute inset-x-0 top-5 flex flex-col items-center text-xl font-semibold px-7 ">
+                <div className=" absolute inset-x-0 top-5 flex flex-col items-center text-xl md:text-base lg:text-xl font-semibold px-7 md:px-2 lg:px-7 ">
                   <span>Do you want to start a project together?</span>
                   <div
                     className=" w-full sm:w-3/5 md:mt-2 md:w-full lg:w-3/5 lg:mt-5 text-center flex justify-start items-center text-sm mt-5 px-5 py-4 bg-slate-900 rounded-xl cursor-pointer"
@@ -128,10 +128,10 @@ export const About = () => {
                 src={Grid}
                 className=" absolute inset-0 h-full mix-blend-screen"
               />
-              <img src={CodeSnip} className=" h-full float-right opacity-80" />
+              <img src={CodeSnip} className=" h-full float-right opacity-40 md:opacity-80" />
               <div className=" absolute inset-y-0 top-32 ml-6 w-1/2 ">
                 <p className=" font-light">THE INSIDE SCOOP</p>
-                <span className=" text-4xl font-semibold">
+                <span className=" text-2xl md:text-4xl font-semibold">
                   Currently building YT integreted app
                 </span>
               </div>

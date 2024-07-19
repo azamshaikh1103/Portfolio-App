@@ -50,9 +50,9 @@ const ProfileCard = ({ link, redirect, name, desc }: ProfType) => {
         <a
           href={redirect}
           target="_blank"
-          className=" mx-4 my-4 h-32 bg-gradient-to-r from-[#070a1f] via-[#191c28] rounded-xl outline outline-1 outline-[#131728] flex justify-center items-center hover:scale-[102%] transition-transform"
+          className=" md:mx-4 my-4 h-32 bg-gradient-to-r from-[#070a1f] via-[#191c28] rounded-xl outline outline-1 outline-[#131728] flex justify-center items-center hover:scale-[102%] transition-transform"
         >
-          <div className=" w-1/4 flex justify-center items-center">
+          <div className=" ml-2 w-1/4 flex justify-center items-center">
             <img
               src={link}
               alt={`${name} Logo`}
@@ -61,7 +61,7 @@ const ProfileCard = ({ link, redirect, name, desc }: ProfType) => {
               className=" rounded-xl bg-white"
             />
           </div>
-          <div className=" w-3/4 mr-5">
+          <div className="pl-4 w-3/4 mr-5">
             <div className=" text-xl font-semibold">{name}</div>
             <div className=" text-xs md:text-base">{desc}</div>
           </div>

@@ -13,7 +13,7 @@ export const WorkExp = () => {
         </Slide>
         <div className=" mt-16 grid grid-cols-1">
           <ExpCard title="Internship in Web dev and Cloud computing" desc="Completed 1 month inhouse internship of Web dev in MERN Stack in our institute Shah and Anchor Kutchhi Engineering College and created a project JobHub" />
-          <ExpCard title="Internship in Web dev and Cloud computing" desc="Completed 1 month inhouse internship of Web dev using HTML, CSS & Js in our institute Shah and Anchor Kutchhi Engineering College and created a project MilkMan" />
+          <ExpCard title="Web dev with HTML, CSS & Js" desc="Completed 1 month inhouse internship of Web dev using HTML, CSS & Js in our institute Shah and Anchor Kutchhi Engineering College and created a project MilkMan" />
         </div>
       </div>
     </>
@@ -24,16 +24,16 @@ const ExpCard = ({ title, desc }: { title: string; desc: string }) => {
   return (
     <>
       <Slide>
-        <div className=" my-4 h-32 bg-gradient-to-r from-[#070a1f] via-[#191c28] rounded-xl outline outline-1 outline-[#282b38] flex justify-center items-center">
+        <div className=" my-4 h-auto py-3 bg-gradient-to-r from-[#070a1f] via-[#191c28] rounded-xl outline outline-1 outline-[#282b38] flex justify-center items-center">
           <div className=" w-1/5 flex justify-center items-center">
             <img
               src="https://e7.pngegg.com/pngimages/651/48/png-clipart-web-development-responsive-web-design-web-developer-software-developer-outgoing-web-design-logo.png"
               alt=""
-              className=" bg-white rounded-xl h-16 w-20"
+              className=" bg-white ml-3 rounded-xl h-14 md:h-16 w-20"
             />
           </div>
-          <div className=" ml-4 md:ml-0 w-4/5 md:mr-5">
-            <div className=" md:text-xl font-semibold">{title} </div>
+          <div className=" ml-5 lg:ml-0 w-4/5 md:mr-5">
+            <div className=" text-sm md:text-xl font-medium">{title} </div>
             <div className=" text-xs my-2 md:text-base">{desc}</div>
           </div>
         </div>

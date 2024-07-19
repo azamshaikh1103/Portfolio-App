@@ -57,8 +57,8 @@ const ProjectCard = ({
 }: ProjectCardTypes) => {
   return (
     <Fade duration={500} delay={200}>
-      <div className=" mx-4 my-4 h-auto bg-gradient-to-r from-[#070a1f] via-[#191c28] outline outline-1 outline-[#282b38] rounded-xl flex flex-col justify-center items-center">
-        <div className=" relative h-2/3 mt-10 bg-slate-950 outline outline-1 outline-[#282b38] rounded-xl w-10/12 mx-10">
+      <div className=" md:mx-4 my-4 h-auto bg-gradient-to-r from-[#070a1f] via-[#191c28] outline outline-1 outline-[#282b38] rounded-xl flex flex-col justify-center items-center">
+        <div className=" relative h-2/3 mt-5 lg:mt-10 bg-slate-950 outline outline-1 outline-[#282b38] rounded-xl w-10/12 lg:mx-10">
           <img src="https://i.imgur.com/dBzlaMp.png" />
           <img
             src={ProjectSS}
@@ -66,14 +66,20 @@ const ProjectCard = ({
           />
         </div>
         <div className=" h-1/3 w-10/12 mt-4 mb-7 flex flex-col justify-between">
-          <div className=" text-xl md:text-3xl mb-3 font-semibold">
+          <div className=" text-lg md:text-xl lg:text-3xl mb-3 font-semibold">
             {ProjectTitle}
           </div>
-          <div>{ProjectDesc}</div>
-          <div className=" mt-3 flex justify-between">
+          <div className=" text-sm lg:text-base">{ProjectDesc}</div>
+          <div className=" mt-3 flex flex-col lg:flex-row justify-between items-center">
             <div>{StackLogos}</div>
             <div className=" flex justify-center items-center border-b-2 border-[#070a1f] hover:border-b-2 hover:border-[#282b38]">
-              <a target="_blank" href={LiveSite}>Check Live Site</a>
+              <a
+                target="_blank"
+                href={LiveSite}
+                className=" text-sm lg:text-base"
+              >
+                Check Live Site
+              </a>
               <RiArrowRightSFill />
             </div>
           </div>
