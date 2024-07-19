@@ -13,41 +13,67 @@ export const Projects = () => {
           </div>
         </Slide>
         <div className=" mt-16 grid grid-cols-1 md:grid-cols-2">
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
+          <ProjectCard
+            ProjectSS="https://i.imgur.com/dBoEF1J.png"
+            ProjectTitle="JobHub - Web App for Jobs"
+            ProjectDesc="Web app for job seekers and company employer, employer can post the job and candidate can apply for jobs"
+            StackLogos="O O O O O"
+            LiveSite=""
+          />
+          <ProjectCard
+            ProjectSS="https://i.imgur.com/i9KB3Np.png"
+            ProjectTitle="Web App for College Placements"
+            ProjectDesc="Web app for final year students to stay up-to-date with the placement companies and to apply on them"
+            StackLogos="O O O O"
+            LiveSite=""
+          />
+          <ProjectCard
+            ProjectSS="https://i.imgur.com/1CsQnSO.png"
+            ProjectTitle="Dairy Ecommerce App"
+            ProjectDesc="Ecommerce dairy app for a user to order dairy products online"
+            StackLogos="O O O O"
+            LiveSite=""
+          />
         </div>
       </div>
     </>
   );
 };
 
-const ProjectCard = () => {
+interface ProjectCardTypes {
+  ProjectSS: string;
+  ProjectTitle: string;
+  ProjectDesc: string;
+  StackLogos: string;
+  LiveSite: string;
+}
+
+const ProjectCard = ({
+  ProjectSS,
+  ProjectTitle,
+  ProjectDesc,
+  StackLogos,
+  LiveSite,
+}: ProjectCardTypes) => {
   return (
     <Fade duration={500} delay={200}>
-      <div className=" mx-4 my-4 h-[550px] bg-gradient-to-r from-[#070a1f] via-[#191c28] outline outline-1 outline-[#131728] rounded-xl flex flex-col justify-center items-center">
-        <div className=" h-2/3 mt-10 bg-slate-950 outline outline-1 outline-[#131728] rounded-xl w-10/12 mx-10"></div>
+      <div className=" mx-4 my-4 h-auto bg-gradient-to-r from-[#070a1f] via-[#191c28] outline outline-1 outline-[#282b38] rounded-xl flex flex-col justify-center items-center">
+        <div className=" relative h-2/3 mt-10 bg-slate-950 outline outline-1 outline-[#282b38] rounded-xl w-10/12 mx-10">
+          <img src="https://i.imgur.com/dBzlaMp.png" />
+          <img
+            src={ProjectSS}
+            className=" absolute bottom-0 place-content-center h-[87%] "
+          />
+        </div>
         <div className=" h-1/3 w-10/12 mt-4 mb-7 flex flex-col justify-between">
-          <Fade
-            cascade
-            damping={0.1}
-            duration={200}
-            triggerOnce
-            className=" text-3xl font-semibold"
-          >
-            Price Prediction using ML model
-          </Fade>
-          <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
-            dolorum?we fwef we weff
+          <div className=" text-xl md:text-3xl mb-3 font-semibold">
+            {ProjectTitle}
           </div>
-          <div className=" flex justify-between">
-            <div>Logos here </div>
-            <div className=" flex justify-center items-center">
-              <a href="">Check Live Site</a>
+          <div>{ProjectDesc}</div>
+          <div className=" mt-3 flex justify-between">
+            <div>{StackLogos}</div>
+            <div className=" flex justify-center items-center border-b-2 border-[#070a1f] hover:border-b-2 hover:border-[#282b38]">
+              <a href={LiveSite}>Check Live Site</a>
               <RiArrowRightSFill />
             </div>
           </div>
