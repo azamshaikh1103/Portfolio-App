@@ -20,11 +20,11 @@ export const About = () => {
       </Slide>
       <Slide direction="up" duration={200}>
         <div className=" mt-10 md:mx-4 py-10 px-5 md:px-16 text-sm md:text-xl bg-gradient-to-r from-[#070a1f] via-[#191c28] rounded-xl outline outline-1 outline-[#131728]">
-          Hello, I'm Azam, a passionate web developer from India. Proficient in
+          Hello, I&apos;m Azam, a passionate web developer from India. Proficient in
           the MERN stack, TypeScript, and Next.js, I create dynamic and
           user-friendly websites. With a touch of DevOps knowledge, I ensure
-          smooth deployments. Constantly learning and evolving, I'm dedicated to
-          bringing innovative web solutions to life. Let's create something
+          smooth deployments. Constantly learning and evolving, I&apos;m dedicated to
+          bringing innovative web solutions to life. Let&apos;s create something
           amazing together!
         </div>
       </Slide>
@@ -57,7 +57,7 @@ export const About = () => {
                   className=" h-full absolute inset-0 bottom-0 right-0 rounded-xl mix-blend-screen opacity-80 "
                 />
                 <span className=" absolute inset-1 w-2/5 m-5 text-2xl font-semibold">
-                  I'm very flexible with time zone communications
+                  I&apos;m very flexible with time zone communications
                 </span>
               </div>
               <div className=" relative bg-[#0b0d22] h-[240px] outline outline-1 outline-[#131728] rounded-xl hover:scale-x-[102%] transition-all  ">
