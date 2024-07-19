@@ -40,7 +40,8 @@ export const About = () => {
               />
               <div className="absolute inset-0 flex items-end justify-center">
                 <p className="bg-black bg-opacity-30 w-full text-lg px-10 font-semibold text-center text-white py-12 rounded-xl backdrop-blur-sm">
-                I am a web developer. I love building dynamic websites and coding late nights!
+                  I am a web developer. I love building dynamic websites and
+                  coding late nights!
                 </p>
               </div>
             </div>

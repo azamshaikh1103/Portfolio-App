@@ -26,7 +26,10 @@ export const Hero = () => {
             Transforming Concepts into Seamless
             <span className=" text-purple-400"> User Experiences</span>
           </div>
-          <a href="#projects" className="text-lg w-fit px-10 py-4 cursor-pointer rounded-xl shadow shadow-gray-800 outline outline-1 outline-[#131728] bg-gradient-to-r from-[#282b3d] to-[#060920] flex justify-center hover:bg-gradient-to-br items-center transition delay-1000 duration-1000 ease-in-out">
+          <a
+            href="#projects"
+            className="text-lg w-fit px-10 py-4 cursor-pointer rounded-xl shadow shadow-gray-800 outline outline-1 outline-[#131728] bg-gradient-to-r from-[#282b3d] to-[#060920] flex justify-center hover:bg-gradient-to-br items-center transition delay-1000 duration-1000 ease-in-out"
+          >
             See my work <RiArrowRightSFill />
           </a>
         </div>
