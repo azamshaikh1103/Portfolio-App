@@ -28,7 +28,7 @@ export const SocailLinks = () => {
             name="Twitter"
           />
           <LinkCard
-            link="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
+            link="https://img.icons8.com/?size=100&id=13930&format=png&color=000000"
             redirect="https://www.linkedin.com/in/azamalishaikh"
             name="LinkedIn"
           />

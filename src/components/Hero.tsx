@@ -11,11 +11,11 @@ export const Hero = () => {
   return (
     <Fade>
       <div className=" h-auto lg:mx-5 md:pt-56 pt-28 lg:pb-28 flex flex-col md:flex-row justify-center md:items-center">
-        <div className=" ml-5 md:ml-0 min-[300px] sm:h-[400px] md:min-w-[350px] md:w-1/3">
+        <div className=" flex justify-center items-center md:ml-0 min-[300px] sm:h-[400px] md:min-w-[350px] md:w-1/3">
           <img
             alt="img"
             src={imageSrc}
-            className=" outline outline-1 outline-[#131728] h-[300px] md:h-[360px] rounded-xl m-5"
+            className=" outline outline-1 outline-[#131728] h-[300px] md:h-[360px] rounded-xl"
             onMouseEnter={() => setImageSrc(hoverSrc)}
             onMouseLeave={() => setImageSrc("https://i.imgur.com/7IDJR28.jpeg")}
           />

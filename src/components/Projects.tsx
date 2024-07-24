@@ -12,7 +12,7 @@ export const Projects = () => {
             My <span className=" text-purple-400">Projects</span>
           </div>
         </Slide>
-        <div className=" mt-16 grid grid-cols-1 md:grid-cols-2">
+        <div className=" mt-16 grid grid-cols-1 md:grid-cols-2 min-[2000px]:grid-cols-3">
           <ProjectCard
             ProjectSS="https://i.imgur.com/dBoEF1J.png"
             ProjectTitle="JobHub - Web App for Jobs"
@@ -30,7 +30,7 @@ export const Projects = () => {
           <ProjectCard
             ProjectSS="https://i.imgur.com/1CsQnSO.png"
             ProjectTitle="Dairy Ecommerce App"
-            ProjectDesc="Ecommerce dairy app for a user to order dairy products online"
+            ProjectDesc="Ecommerce web app in HTML, CSS and JS for users to order dairy products online"
             StackLogos="O O O O"
             LiveSite=""
           />
